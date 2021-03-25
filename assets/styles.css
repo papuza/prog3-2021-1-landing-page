@@ -444,7 +444,8 @@ width: 250px;
     font-size: 1.5em;
   }
   .card-section{
-    background-size: 100vw 100%;
+    background-color: white;
+    background-image: none;
   }
   .cards-container{
     flex-direction: column;
@@ -466,7 +467,8 @@ width: 250px;
   }
 
   .formContainer{
-    background-size: 100% 100%;
+    background-color: white;
+    background-image: none;
   }
 
   .form-title{
