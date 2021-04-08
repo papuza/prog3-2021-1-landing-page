@@ -73,7 +73,7 @@ $(document).ready(function () {
             sexo = "Masculino"
           } else if (element.sexo == "M") {
             sexo = "Femenino"
-          } else if (element.sexo == "Otro") {
+          } else {
             sexo = "Otro"
           }
           $('.comments-grid').append('<div class="comment">' + '<div class="comment-head">' + '<h3>' + element.nombre + '</h3>' + '<p>' + sexo + '</p>' + '</div>' + '<div class="comment-body">' + element.comentarios + '</div>' + '</div>')

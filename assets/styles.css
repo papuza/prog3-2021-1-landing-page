@@ -305,14 +305,17 @@ width: 250px;
   justify-content: space-between;
   align-items: center;
   height: auto;
+  flex-wrap: wrap;
 }
 
 .comment{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 30%;
   height: 20%;
+  margin-top: 2%;
 }
 
 .comment-head{
