@@ -1,3 +1,7 @@
+
+
+/* ******************************RESET**************************** */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +46,12 @@ table {
 	border-spacing: 0;
 }
 
-/* ******************************RESET**************************** */
+html {
+  scroll-behavior: smooth;
+}
+
+/****************************FIN DE RESET**************************/
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -58,14 +67,14 @@ body{
 }
 
 .navbar{
-  display: flex;
   position: fixed;
-  padding: 0 0 0 2%;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100vw;
   height: 15vh;
+  padding: 0 0 0 2%;
   background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .menu{
   width: 60%;
@@ -74,8 +83,8 @@ body{
   align-items: center;
 }
 .menu-item{
-  height: 100%;
   width: 25%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,14 +92,14 @@ body{
 .link-item{
   width: 100%;
   height: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
   transition: 0.3s;
 }
 .link-item:hover{
@@ -98,26 +107,23 @@ body{
   color: white;
 }
 .logo-cont{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 10%;
+  height: 100%;
+  background-image: url("../imgs/firmablanca.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.logo{
-width: 250px;
-}
-
 /* NAVBAR STYLES FIN*/
 
 /* HERO STYLES */
-
 .hero{
-  background-image: url("./imgs/fondo-hero.jpg");
-  background-position: center center;
-  background-size: cover;
   width: 100%;
   height: 100vh;
   text-align: center;
-
+  background-image: url("../imgs/muro.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 .container{
@@ -132,70 +138,67 @@ width: 250px;
 .hero-container{
   width: 100%;
   height: 50%;
+  color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  color: white;
-  background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0,0,0,0.5) 5%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,0.5) 95%, rgba(0,0,0,0) 100%);
 }
 
 .hero-title{
+  margin-bottom: 4%;
   font-size: 5em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 4%;
 }
 
 .hero-text{
-  font-size: 2em;
   padding-left: 5%;
   padding-right: 5%;
+  font-size: 2em;
   line-height: 1.5em;
 }
-
 /* HERO STYLES FIN */
 
 /* CARDS STYLES */
-
 .card-section{
-  background-color: rgba(0, 0, 0, 0);
   height: 50vh;
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .cards-container{
+  height: 100%;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  height: 100%;
 }
 
 .card{
   width: 25%;
+  padding: 5% 2% 5% 2%;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.8);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  border-radius: 15px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  padding: 5% 2% 5% 2%;
-  background-color: white;
 }
 
 .card-img{
   width: auto;
   height: auto;
+  padding: 5%;
+  text-align: center;
   color: rgb(253, 213, 44);
   border: 5px solid rgb(253, 213, 44);
   border-radius: 50%;
-  text-align: center;
-  padding: 5%;
 }
 
 .card-text{
@@ -204,21 +207,21 @@ width: 250px;
 }
 
 .card-title{
-  font-size: 2em;
-  font-weight: bold;
   margin-top: 8%;
   margin-bottom: 5%;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .card-btn{
-  display: block;
   width: 50%;
+  margin: 10% auto 0 auto;
   padding: 2%;
-  border-radius: 5px;
   text-decoration: none;
   color: rgb(253, 213, 44);
   border: 2px solid rgb(253, 213, 44);
-  margin: 10% auto 0 auto;
+  border-radius: 5px;
+  display: block;
   transition: 0.3s;
 }
 
@@ -226,20 +229,17 @@ width: 250px;
   background-color: rgb(253, 213, 44);
   color: #fff;
 }
-
 /* CARDS STYLES FIN */
 
 /* CALLTOACTION STYLES */
-
 .calltoaction{
   height: 50vh;
   background-color: rgb(40, 40, 40);
   color: rgb(253, 213, 44);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  
 }
 .calltoaction-text{
   height: 100%;
@@ -249,26 +249,26 @@ width: 250px;
 }
 
 .calltoaction-text h2{
+  margin-bottom: 2%;
   font-size: 4em;
   font-weight: bold;
-  margin-bottom: 2%;
 }
 .calltoaction-text p{
+  padding-right: 5%;
   font-size: 1.5em;
   line-height: 1.5em;
   color: #fff;
-  padding-right: 5%;
 }
 
 .calltoaction-btn{
-  display: block;
   padding: 2%;
-  background-color: rgb(253, 213, 44);
   margin-top: 2%;
-  text-decoration: none;
   font-size: 2em;
   font-weight: bold;
+  text-decoration: none;
+  background-color: rgb(253, 213, 44);
   color: #fff;
+  display: block;
   transition: 0.3s;
 }
 
@@ -276,7 +276,6 @@ width: 250px;
   background-color: #fff;
   color: rgb(253, 213, 44);;
 }
-
 /* CALLTOACTION STYLES FIN */
 
 /* COMMENTS STYLES */
@@ -288,45 +287,47 @@ width: 250px;
 }
 
 .comments-title{
+  margin-bottom: 1%;
   font-size: 4em;
   font-weight: bold;
-  margin-bottom: 1%;
 }
 
 .comments-subtitle{
-  text-align: center;
-  font-size: 2em;
   margin-bottom: 3%;
+  font-size: 2em;
+  text-align: center;
 }
 
 .comments-grid{
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: auto;
   flex-wrap: wrap;
 }
 
 .comment{
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
   width: 30%;
   height: 20%;
   margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .comment-head{
   width: 100%;
+  padding: 5% 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color:rgb(253, 213, 44);
+  color: white;
+  border-radius: 15px 15px 0 0;
   display: flex;
   justify-content: space-between;
-  font-size: 1.5em;
-  background-color:rgb(40, 40, 40);
-  color: white;
-  padding: 5% 0;
-  border-radius: 15px;
 }
 
 .comment-head h3, .comment-head p{
@@ -335,70 +336,71 @@ width: 250px;
 }
 
 .comment-body{
-  width: 100%;
-  line-height: 1.8em;
-  padding: 2% 0 2% 0;
+  width: 95%;
+  padding: 2% 0 2% 5%;
   font-style: italic;
+  line-height: 1.8em;
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border-radius: 0 0 15px 15px;
 }
-
-
+/* FIN COMMENTS STYLES */
 
 /* FORM STYLES */
-
 .formContainer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  height: 50vh;
   text-align: center;
   background-color: rgb(40, 40, 40);
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form-title{
+  margin-bottom: 1%;
   font-size: 4em;
   font-weight: bold;
-  margin-bottom: 1%;
   color: white;
 }
 
 .form-text{
-  font-size: 2em;
   margin-bottom: 3%;
+  font-size: 2em;
   color: white;
 }
 
 .form{
   width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 15px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   padding: 3% 0% 0 0%;
   background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputs, .form-msg{
   width: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .inputs{
-  justify-content: space-between;
-  flex-direction: row;
   margin-bottom: 10%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .inputs div{
   width: 30%;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .form-msg{
@@ -407,19 +409,20 @@ width: 250px;
 
 label{
   margin-top: 5px;
-  color: red;
   font-size: 0.8em;
   text-align: left;
+  color: red;
 }
 
 
 .input, .textarea, .input-select, .form-btn{
   width: 100%;
-  border: none;
-  outline: none;
-  border-bottom: 3px solid rgb(40, 40, 40);;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
+  border: none;
+  border-bottom: 3px solid rgb(40, 40, 40);;
+  outline: none;
+  
 }
 
 .form-msg{
@@ -427,8 +430,8 @@ label{
 }
 
 .textarea{
-  resize:none;
   height: 100%;
+  resize:none;
 }
 
 .input:focus, .input-select:focus, .textarea:focus{
@@ -437,14 +440,14 @@ label{
 
 
 .form-btn{
-  border: none;
-  border-radius: 0px 0px 15px 15px;
+  margin-top: 5%;
+  padding: 2%;
   font-weight: bold;
   background-color: rgb(253, 213, 44);
   color: white;
-  padding: 2%;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
   transition: 0.3s;
-  margin-top: 5%;
 }
 
 .form-btn:hover{
@@ -453,10 +456,14 @@ label{
   cursor: pointer;
 }
 
+.respuesta_form{
+  margin-top: 2%;
+  font-size: 1.5em;
+  color: rgb(253, 213, 44);
+}
 /* FORM STYLES FIN */
 
 /* FOOTER STYLES */
-
 .footer{
   width: 100%;
   height: 30vh;
@@ -474,8 +481,8 @@ label{
 }
 
 .redes-section div{
-  height: 100%;
   width: 33%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,16 +501,15 @@ label{
 }
 
 .copyright{
+  width: 50%;
+  padding-right: 2%;
+  font-size: 1em;
+  line-height: 2em;
+  color: white;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 50%;
-  font-size: 1em;
-  color: white;
-  padding-right: 2%;
-  line-height: 2em;
 }
-
 
 ::-webkit-scrollbar {display: none;}
 
@@ -517,11 +523,11 @@ label{
   .hamburguer-menu{
     width: 30%;
     padding-right: 5%;
+    font-size: 3em;
+    color: rgb(253, 213, 44);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: rgb(253, 213, 44);
-    font-size: 3em;
   }
   .hero-title{
     font-size: 3em;
@@ -562,29 +568,29 @@ label{
   }
 
   .comment-head{
-    justify-content: space-around;
     padding: 5% 0;
+    justify-content: space-around;
   }
 
   .form-title{
-    font-size: 2em;
     margin-bottom: 5%;
+    font-size: 2em;
   }
   .form-text{
-    font-size: 1em;
     margin-bottom: 5%;
+    font-size: 1em;
   }
   .form{
     width: 90%;
   }
   .inputs{
-    flex-direction: column;
     margin-bottom: 0;
+    flex-direction: column;
   }
   .input, .input-select, .textarea{
     width: 100%;
-    font-size: 1em;
     margin-bottom: 10%;
+    font-size: 1em;
   }
 
   .inputs div{
@@ -608,7 +614,7 @@ label{
   }
 
   .copyright{
-    text-align: center;
     font-size: 1em;
+    text-align: center;
   }
 }

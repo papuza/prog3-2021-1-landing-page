@@ -56,6 +56,7 @@ $(document).ready(function () {
         success: function (response) {
           $('.respuesta_form').html('Gracias ' + response.nombre + ' por tu mensaje')
           $('.loading_spinner').hide();
+          loadLeads();
         }
       })
     }
@@ -71,7 +72,7 @@ $(document).ready(function () {
           var sexo;
           if (element.sexo == "H") {
             sexo = "Masculino"
-          } else if (element.sexo == "M") {
+          } else if (element.sexo == "F") {
             sexo = "Femenino"
           } else {
             sexo = "Otro"
